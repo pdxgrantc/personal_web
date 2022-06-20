@@ -7,7 +7,7 @@ if (arguments.length == 2) {
 				port = 80;
 }
 else {
-				port = 3000;
+				port = 5555;
 }
 
 console.log(port);
