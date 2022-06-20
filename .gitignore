@@ -2,3 +2,4 @@ development/database/data
 production/database/data
 development/node_modules
 production/node_modules
+production/package-lock.json
