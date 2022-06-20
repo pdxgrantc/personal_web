@@ -1,2 +1,4 @@
-database/data
-node_modules
+development/database/data
+production/database/data
+development/node_modules
+production/node_modules

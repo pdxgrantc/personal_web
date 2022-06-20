@@ -1,0 +1,74 @@
+:root {
+    --main-bg-color: rgb(18, 24, 36);
+    --button-presed: rgb(38, 45, 64);
+    --white-color: rgb(214, 214, 214);
+    --accent-button: rgb(106, 105, 245);
+    --accent-button-presed: rgb(52, 51, 112);
+    --accent-color: rgb(71, 82, 102);
+    --gap-width: 20px;
+    --horizontal-gap-width: 20px;
+    --vertical-gap-width: 35px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 65%;
+    margin: auto;
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
+    min-width: 400px;
+}
+
+#page-contents {
+    margin: 50px auto;
+    
+    gap: var(--vertical-gap-width);
+}
+
+#header {
+    width: 100%;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+}
+
+#footer {
+    font-size: .85em;
+    text-align: center;
+}
+
+@media (max-width: 1350px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 950px) {
+    #full-contents {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    #header {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1vh;
+    }
+
+    #header h1 {
+        margin: auto;
+        text-align: center;
+    }
+
+    #footer {
+        font-size: .7em;
+    }
+}

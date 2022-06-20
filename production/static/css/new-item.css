@@ -1,0 +1,76 @@
+:root {
+    --main-bg-color: rgb(18, 24, 36);
+    --button-presed: rgb(50, 60, 88);
+    --white-color: rgb(214, 214, 214);
+    --accent-button: rgb(106, 105, 245);
+    --accent-button-presed: rgb(52, 51, 112);
+    --accent-color: rgb(71, 82, 102);
+    --gap-width: 20px;
+}
+
+form {
+    margin: 0px auto;
+    gap: 20px;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    margin: 2px;
+}
+
+input {
+    padding: 0px 10px;
+    border: none;
+    width: 100%;
+    height: 5vh;
+    font-size: 24px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#inputs {
+    width: 100%;
+}
+
+#title-input {
+    font-size: 26px;
+}
+
+textarea {
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    height: 35vh;
+    font-weight: 500;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#dates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#dates input {
+    width: 32%;
+}
+
+#button {
+    width: 20%;
+    min-width: fit-content;
+    height: 6vh;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button {
+    min-width: fit-content;
+}

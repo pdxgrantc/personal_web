@@ -1,0 +1,52 @@
+/* css items relating to the todo list on home page */
+h3 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+#todo-items {
+    margin: 0px auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+    gap: 15px;
+}
+
+.item-title {
+    margin: 0px;
+}
+
+.dates {
+    display: flex;
+    flex: direction row;
+    flex-wrap: wrap;
+    gap: 9%;
+}
+
+.item-date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: min-content;
+    font-size: 18px;
+}
+
+.item-date h3 {
+    font-size: 18px;
+    margin-right: 10%;
+}
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}

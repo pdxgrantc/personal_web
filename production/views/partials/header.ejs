@@ -1,0 +1,50 @@
+<a href="/" etc id="title" class="a-nav-button">
+    <div>
+        <h1>TO-DO</h1>
+    </div>
+</a>
+<div id="nav-bar" class="flex">
+    <a href="/" etc class="a-nav-button">
+        <div id="home" class="nav-button">
+            <h2>Home</h2>
+        </div>
+    </a>
+    <a href="/new-item" etc class="a-nav-button">
+        <div id="new-item" class="nav-button">
+            <h2>Add Item</h2>
+        </div>
+    </a>
+</div>
+<div id="small-screen-nav" class="dropdown">
+    <button onclick="myFunction()" class="dropdown-button">Menu</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="/" etc class="small-screen-nav-button">
+            Home
+        </a>
+        <a href="/new-item" etc class="small-screen-nav-button">
+            Add Item
+        </a>
+    </div>
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropdown-button')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
