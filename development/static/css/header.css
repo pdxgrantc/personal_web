@@ -4,13 +4,14 @@
     line-height: 85%;
     font-size: 18px;
     height: fit-content;
+    gap: 0px;
 }
 
 .a-nav-button {
     text-decoration: none;
     color: var(--white-color);
     background-color: var(--button-presed);
-    padding: 0px 30px;
+    padding: 0px 25px;
 }
 
 .a-nav-button:hover {
@@ -23,6 +24,7 @@
 
 #title {
     line-height: 22px;
+    padding: 0px 35px;
 }
 
 #todo-items {
